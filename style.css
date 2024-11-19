@@ -1,0 +1,189 @@
+body{
+    background-color: #272C32;
+    overflow: hidden;
+}
+
+
+/*COMEÇO NAVEGAÇÃO*/
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+h1{
+    justify-self: center;
+    font-family: "Inter", sans-serif;
+    font-weight: normal;
+    color: white;
+    text-align: center;
+    width: 100%;
+    margin-right: 10%;
+
+}
+a img{
+    width: 40vh;
+    margin-left: 2vh;
+}
+
+.button{
+    background-color: white;
+    width: 15vh;
+    height: 4vh;
+    border-radius: .5vh;
+    text-decoration: none;
+    align-content: center;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    color: black;
+    font-size: 1vh;
+    margin-right: 2vh;
+}
+
+/*FIM NAVEGAÇÃO*/
+
+/*COMEÇO CARDS*/
+
+#cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    
+}
+
+#cards a {
+    text-decoration: none;
+}
+
+#aluno{
+    background-color: #3A3E44;
+    width: 30vh;
+    height: 45vh;
+    align-self: center;
+    justify-items: center;
+    border-radius: 2%;
+}
+
+#aluno img{
+    width: 15vh;
+    background-color: white;
+    padding: .5vh;
+    border-radius: 100%;
+    margin-top: 5vh;
+    margin-left: 0;
+}
+
+#estudante{
+    -webkit-transform: perspective(10%) translateZ(0);
+    transform: perspective(10%) translateZ(0);
+    transform: perspective(10%) translateZ(0);
+    margin-left: 2vh;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    border-radius: 2%;
+    width: 30vh;
+    height: 45vh;
+}
+
+#estudante:hover, #estudante:focus, #estudante:active {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    box-shadow: 0vh 10vh 15vh 10vh rgba(255, 1, 1, 0.336);
+    background-image: conic-gradient(from var(--angle), #ff0606, #ff5757, #fc9b5a, #fd838d, #ff5d5d, #ff7e7e);
+    padding: .5vh;
+    animation: 4s spin linear infinite;
+}
+
+
+
+#empresa{
+    background-color: #3A3E44;
+    width: 30vh;
+    height: 45vh;
+    border-radius: 2%;
+    align-self: center;
+    justify-items: center;
+}
+
+#empresa img{
+    width: 15vh;
+    background-color: white;
+    padding: .5vh;
+    border-radius: 100%;
+    margin-top: 5vh;
+    margin-left: 0;
+}
+
+
+h3{
+    font-family: "Inter", sans-serif;
+    color: white;
+}
+
+#emp{
+    -webkit-transform: perspective(10%) translateZ(0);
+    transform: perspective(10%) translateZ(0);
+    transform: perspective(10%) translateZ(0);
+    margin-left: 2vh;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    border-radius: 2%;
+    width: 30vh;
+    height: 45vh;
+}
+
+#emp:hover, #emp:focus{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    box-shadow: 0vh 10vh 15vh 10vh rgba(35, 159, 241, 0.212);
+    background-image: conic-gradient(from var(--angle), #1222ff, #6c5cff, #d8c3ff, #8957ff, #5a6af8, #2d54ff);
+    padding: .5vh;
+    animation: 4s spin linear infinite;
+  }
+
+  @property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+#emp::before{
+    width: 0;
+    height: 0;
+    background-image: none;
+    opacity: 0;
+    
+}
+
+ #emp::after{
+    content: '';
+    position: absolute;
+    height: 45vh;
+    width: 30vh;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 3px;
+    border-radius: 10px;
+    animation: 3s spin linear infinite;
+    
+}
+  
+  @keyframes spin{
+    from{
+      --angle: 0deg;
+    }
+    to{
+      --angle: 360deg;
+    }
+  }
+
+/*FIM CARDS*/
