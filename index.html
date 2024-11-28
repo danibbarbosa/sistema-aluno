@@ -7,12 +7,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
     <title>Portal Estágios</title>
 </head>
 <body>
+    <video autoplay loop muted src="img/3129595-uhd_2560_1440_30fps.mp4"></video>
     <nav>
         <a href="index.html"><img src="img/logo.png"></a>
-        <h1>EU SOU</h1>
+        <h1>BEM-VINDO AO PORTAL DE ESTÁGIOS</h1>
         <a class="button" href="index.html">VOLTAR AO SITE</a>
     </nav>
 
@@ -21,19 +26,39 @@
 
     <!---CARD ALUNO--->
 
-        <a id="estudante" href="#estudante">
+        <div id="estudante" href="#estudante">
+
             <div id="aluno">
-                <img src="img/student.png">
-                <h3>ALUNO</h3>
+                <img class="foto" src="img/student.png">
+                <h3>EU SOU,<br>ALUNO</h3>
+                <button id="flipButton" type="submit"></button>
             </div>
-        </a>
-    <!---CARD EMPRESA--->
-        <a id="emp" href="#empresa">
+
+            
+        </div>
+        <!--
+        <div id="aluno-b">
+            <img class="foto" src="img/student.png">
+            <h4>LOGIN</h4>
+            <input type="number" placeholder="CPF">
+            <div id="senha"><input type="password" placeholder="******"><button><img src="img/closed.png"></button></div>
+            <a href="#index">Recuperar Senha</a>
+            <button type="submit">LOGIN</button>
+        </div>-->
+        
+        <!---CARD EMPRESA--->
+
+
+        <div id="emp" href="#empresa">
             <div id="empresa">
                 <img src="img/businessman.png">
-                <h3>EMPRESA</h3>
+                <h3>EU SOU,<br>EMPRESA</h3>
+                <button type="submit" aria-hidden="true"></button>
             </div>
-        </a>
-    </div>   
+        </div>
+    </div>
+
+    <script src="flip.js"></script>
+
 </body>
 </html>

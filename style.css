@@ -1,8 +1,18 @@
 body{
     background-color: #272C32;
     overflow: hidden;
+    margin: 0;
+    padding: 0;
 }
 
+video{
+    position: absolute;
+    z-index: -10;
+    padding: 0;
+    margin: 0;
+    opacity: .5;
+    width: 100%;
+}
 
 /*COMEÇO NAVEGAÇÃO*/
 
@@ -15,13 +25,16 @@ nav{
 
 h1{
     justify-self: center;
-    font-family: "Inter", sans-serif;
-    font-weight: normal;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 600;
     color: white;
     text-align: center;
     width: 100%;
-    margin-right: 10%;
-
+    font-size: 5vh;
+    padding: 0;
+    margin: 0;
+    align-self: center;
+    padding-right: 30vh;
 }
 a img{
     width: 40vh;
@@ -30,7 +43,7 @@ a img{
 
 .button{
     background-color: white;
-    width: 15vh;
+    width: 17vh;
     height: 4vh;
     border-radius: .5vh;
     text-decoration: none;
@@ -39,7 +52,7 @@ a img{
     font-family: "Inter", sans-serif;
     font-weight: bold;
     color: black;
-    font-size: 1vh;
+    font-size: 1.2vh;
     margin-right: 2vh;
 }
 
@@ -52,23 +65,47 @@ a img{
     justify-content: center;
     align-items: center;
     height: 80vh;
-    
+    text-align: center;
 }
 
 #cards a {
+    text-align: center;
     text-decoration: none;
 }
 
+#aluno button{
+    background-color: transparent;
+    background-image: url(img/go.png);
+    background-size: 5vh;
+    background-repeat: no-repeat;
+    width: 5vh;
+    height: 5vh;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+#aluno button:hover{
+    background-image: url(img/go-m.png);
+    background-size: 5vh;
+}
+
 #aluno{
-    background-color: #3A3E44;
     width: 30vh;
     height: 45vh;
     align-self: center;
     justify-items: center;
     border-radius: 2%;
+    justify-content: center;
+    background: url(img/dot-3.png) left center no-repeat, url(img/grid-2.png) bottom right;
+    background-repeat: no-repeat;
+    background-color: #1A1E22;
+    background-size: 20vh;
 }
 
-#aluno img{
+
+.foto{
     width: 15vh;
     background-color: white;
     padding: .5vh;
@@ -76,6 +113,7 @@ a img{
     margin-top: 5vh;
     margin-left: 0;
 }
+
 
 #estudante{
     -webkit-transform: perspective(10%) translateZ(0);
@@ -95,21 +133,145 @@ a img{
     -webkit-transform: scale(1.5);
     transform: scale(1.5);
     box-shadow: 0vh 10vh 15vh 10vh rgba(255, 1, 1, 0.336);
-    background-image: conic-gradient(from var(--angle), #ff0606, #ff5757, #fc9b5a, #fd838d, #ff5d5d, #ff7e7e);
+    background-image: conic-gradient(from var(--angle), #df0202, #ff5757, #fc9b5a, #fdb4ba, #ff9e5d, #fc5858);
     padding: .5vh;
-    animation: 4s spin linear infinite;
+    animation: 6s spin linear infinite;
 }
 
 
+#aluno-b{
+    width: 30vh;
+    height: 45vh;
+    background-color: #1A1E22;
+    border-radius: 2%;
+    background: url(img/dot-3.png) left center no-repeat, url(img/grid-2.png) bottom right;
+    background-repeat: no-repeat;
+    background-color: #1A1E22;
+    background-size: 20vh;
+    font-family: "Rajdhani", sans-serif;
+    color: white;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    display: grid;
+    grid-template-rows: auto;
+}
+
+#aluno-b h4{
+    margin: 0;
+    font-size: 3vh;
+    font-weight: 500;
+}
+
+#aluno-b input{
+    outline: none;
+    border-radius: .5vh;
+    border: none;
+    width: 17vh;
+    height: 2.5vh;
+    font-size: 2vh;
+    font-size: 1.5vh;
+    font-family: "Rajdhani", sans-serif;
+    justify-self: center;
+    padding-left: 1vh;
+}
+
+#aluno-b button{
+    width: 10vh;
+    height: 3.5vh;
+    font-size: 1.5vh;
+    color: #1A1E22;
+    font-weight: 600;
+    background-color: white;
+    border: none;
+    border-radius: .5vh;
+    cursor: pointer;
+}
+
+#aluno-b a{
+    color: white;
+    text-decoration: underline;
+    font-size: 1.5vh;
+}
+
+#senha{
+    display: flex;
+    justify-self: center;
+    background-color: white;
+    border-radius: .5vh;
+    width: 18vh;
+    height: 3.2vh;
+    align-items: center;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+    
+}
+
+#senha input{
+    height: 3vh;
+    align-self: center;
+    width: 12vh;
+    height: 2.5vh;
+    align-self: center;
+    align-content: center;
+    font-size: 1vh;
+}
+
+#senha button{
+    border-radius: 0;
+    background-color: transparent;  
+    width: 4.5vh;
+    height: 2.5vh;
+    position: sticky;
+}
+
+#senha img{
+    width: 2vh;
+    background-color: transparent;
+    border-radius: 0;
+    text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number]{
+    -moz-appearance: textfield;
+}
 
 #empresa{
-    background-color: #3A3E44;
     width: 30vh;
     height: 45vh;
     border-radius: 2%;
     align-self: center;
     justify-items: center;
+    background: url(img/dot-2.png) bottom center no-repeat, url(img/grid-3.png) left top no-repeat;
+    background-color: #1A1E22;
+    background-size:17vh;
 }
+
+#empresa button{
+    background-color: transparent;
+    background-image: url(img/go.png);
+    background-size: 5vh;
+    background-repeat: no-repeat;
+    width: 5vh;
+    height: 5vh;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+#empresa button:hover{
+    background-image: url(img/go-p.png);
+    background-size: 5vh;
+}
+
 
 #empresa img{
     width: 15vh;
@@ -122,8 +284,12 @@ a img{
 
 
 h3{
-    font-family: "Inter", sans-serif;
+    font-family: "Rajdhani", sans-serif;
     color: white;
+    font-size: 3vh;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 1vh;
 }
 
 #emp{
@@ -143,10 +309,10 @@ h3{
 #emp:hover, #emp:focus{
     -webkit-transform: scale(1.5);
     transform: scale(1.5);
-    box-shadow: 0vh 10vh 15vh 10vh rgba(35, 159, 241, 0.212);
+    box-shadow: 0vh 10vh 15vh 10vh rgba(35, 159, 241, 0.336);
     background-image: conic-gradient(from var(--angle), #1222ff, #6c5cff, #d8c3ff, #8957ff, #5a6af8, #2d54ff);
     padding: .5vh;
-    animation: 4s spin linear infinite;
+    animation: 6s spin linear infinite;
   }
 
   @property --angle{

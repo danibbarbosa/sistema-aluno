@@ -1,0 +1,175 @@
+body{
+    background-color: #272C32;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+video{
+    position: absolute;
+    z-index: -10;
+    padding: 0;
+    margin: 0;
+    opacity: .5;
+    width: 100%;
+}
+
+/*COMEÇO NAVEGAÇÃO*/
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+h1{
+    justify-self: center;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-size: 5vh;
+    padding: 0;
+    margin: 0;
+    align-self: center;
+    padding-right: 30vh;
+}
+a img{
+    width: 40vh;
+    margin-left: 2vh;
+}
+
+.button{
+    background-color: white;
+    width: 17vh;
+    height: 4vh;
+    border-radius: .5vh;
+    text-decoration: none;
+    align-content: center;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    color: black;
+    font-size: 1.2vh;
+    margin-right: 2vh;
+}
+
+/*FIM NAVEGAÇÃO*/
+
+/*COMEÇO CARDS*/
+
+#cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    justify-items: center;
+}
+
+#cards a {
+    text-align: center;
+    text-decoration: none;
+}
+
+.vaga{
+    width: 35vh;
+    height: 40vh;
+    justify-items: center;
+    border-radius: 2%;
+    justify-content: center;
+    background-color: white;
+    justify-items: center;
+    text-align: center;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: bold;
+}
+
+.top{
+   display: flex;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin-top: 1vh;
+}
+
+.star{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    width: 4vh;
+    text-align: right;
+    float: right;
+    margin-left: 55%;
+}
+
+.rocket{
+    width: 4vh;
+    margin-left: 1vh;
+    
+}
+
+h4{
+    font-family: "Rajdhani", sans-serif;
+    font-size: 2vh;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    align-self: center;
+   
+    
+}
+
+
+li{
+    list-style: none;
+    font-size: 2vh;
+    align-items: center;
+    text-justify: left;
+    width: 100%;
+    text-align: left;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+}
+
+ul{
+    text-justify: left;
+}
+
+.logo{
+  width: 15vh;
+  margin-bottom: 2vh;
+}
+
+.icon{
+    width: 3vh;
+    align-self: center;
+    padding-right: 1vh;
+}
+
+.plus{
+    width: 2vh;
+}
+
+h3{
+    font-family: "Rajdhani", sans-serif;
+    color: white;
+    font-size: 3vh;
+    text-align: center;
+    font-weight: 400;
+}
+
+.info{
+    border: solid black .1vh;
+    background-color: transparent;
+    cursor: pointer;
+    width: 10vh;
+    height: 5vh;
+    border-radius: 10%;
+    text-justify:  center;
+    font-size: 2vh;
+    position: sticky;
+}
+/*FIM CARDS*/
