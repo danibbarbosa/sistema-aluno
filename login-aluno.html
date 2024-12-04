@@ -15,10 +15,28 @@
 </head>
 <body>
     <nav>
-        <a href="index.html"><img src="img/logo.png"></a>
-        <h1>BEM-VINDO(A), </h1>
-        <a class="button" href="index.html">VOLTAR AO SITE</a>
+      <a href="index.html"><img src="img/logo.png"></a>
+      <h1>BEM-VINDO</h1>
+      <a class="button" href="index.html">VOLTAR AO SITE</a>
     </nav>
+
+    <div id="login">
+      <img class="dot" src="img/dot-4.png">
+      <img class="grid" src="img/dot-2.png">
+      <h3>LOGIN, ALUNO</h3>
+      <div id="area">
+        <h4>CPF:</h4>
+        <input type="number" placeholder="xxx.xxx.xxx-xx">
+        <h4>SENHA:</h4>
+        <div id="senha">
+          <input placeholder="******">
+          <span class="olho"><button class="eye"><img src="img/closed.png"></button></span>
+        </div>
+        <a class="rec" href="">Recuperar Senha</a>
+        <button type="submit">LOGIN</button>
+      </div>
+    </div>
+
     <div id="particles-js"></div>
     <script src="particles.js"></script>
     <script src="app.js"></script>

@@ -43,7 +43,7 @@ a img{
 
 .button{
     background-color: white;
-    width: 17vh;
+    width: 19vh;
     height: 4vh;
     border-radius: 1vh;
     text-decoration: none;
@@ -53,7 +53,7 @@ a img{
     font-weight: bold;
     color: black;
     font-size: 1.2vh;
-
+    margin-right: 2vh;
     
 }
 
@@ -96,15 +96,36 @@ a img{
     width: 100%;
 }
 
-.star{
-    border: none;
+#star{
+    border-color: #272C32;
+    border-width: 1vh;
     background-color: transparent;
     cursor: pointer;
-    width: 4vh;
+    width: 6vh;
     text-align: right;
     float: right;
     margin-left: 55%;
+    background-image: url(img/star-t.png);
+    background-repeat: no-repeat;
+    background-size: 3vh;
+    transition: fill 200ms;
 }
+
+
+
+#star.active {
+    background-image: url(img/star-y.png);
+    animation: fav 600ms ease;
+  }
+  
+  @keyframes fav {
+    70% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
 
 .rocket{
     width: 4vh;
@@ -134,6 +155,7 @@ li{
     align-self: center;
     align-content: center;
     align-items: center;
+    padding-left: 1em;
 }
 
 ul{
@@ -165,7 +187,7 @@ h3{
     font-weight: 400;
 }
 
-.info{
+#info{
     border: solid black .1vh;
     background-color: transparent;
     cursor: pointer;
@@ -177,3 +199,16 @@ h3{
     position: sticky;
 }
 /*FIM CARDS*/
+
+#card{
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #ffffff;
+    border-radius: 1vh;
+  
+}
+
+.active, #info:hover {
+    background-color: #ffffff;
+  }

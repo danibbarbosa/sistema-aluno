@@ -86,11 +86,6 @@ a img{
 
 
 
-#aluno button:hover{
-    background-image: url(img/go-m.png);
-    background-size: 5vh;
-}
-
 #aluno{
     width: 30vh;
     height: 45vh;
@@ -266,11 +261,6 @@ input[type=number]{
 }
 
 
-
-#empresa button:hover{
-    background-image: url(img/go-p.png);
-    background-size: 5vh;
-}
 
 
 #empresa img{
