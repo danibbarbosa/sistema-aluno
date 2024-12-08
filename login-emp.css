@@ -191,3 +191,13 @@ input[type=number]{
     background-repeat: no-repeat;
   }
   
+
+  footer{
+    font-family: "Rajdhani", sans-serif;
+    color: white;
+    font-weight: 500;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+}

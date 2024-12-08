@@ -73,10 +73,11 @@ h2{
 
 #cards{
     display: flex;
-    justify-content: space-around;
+    margin-left: 2vh;
     align-items: center;
     height: 30%;
     justify-items: center;
+
 }
 
 #cards a {
@@ -99,26 +100,13 @@ h2{
 
 .top{
    display: flex;
+   position: fixed;
+   z-index: 1;
     margin: 0;
     padding: 0;
     text-align: center;
     margin-top: 1vh;
     width: 100%;
-}
-
-.star{
-    border-color: #272C32;
-    border-width: 1vh;
-    background-color: transparent;
-    cursor: pointer;
-    width: 6vh;
-    text-align: right;
-    float: right;
-    margin-left: 55%;
-    background-image: url(img/star-t.png);
-    background-repeat: no-repeat;
-    background-size: 3vh;
-    transition: fill 200ms;
 }
 
 
@@ -139,43 +127,39 @@ h4{
     
 }
 
-
-li{
-    list-style: none;
-    font-size: 2vh;
-    align-items: center;
-    text-justify: left;
+.add{
     width: 100%;
-    text-align: left;
-    align-self: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
     align-content: center;
-    align-items: center;
-    padding-left: 1em;
-}
-
-ul{
-    text-justify: left;
-    margin-left: 0;
-    padding-left: 0;
-}
-
-.logo{
-  height: 20%;
-  text-align: center;
-}
-
-.img{
-    width: 20%;
-}
-
-.icon{
-    width: 3vh;
     align-self: center;
-    padding-right: 1vh;
+    padding: 0;
+    margin: 0;
+    justify-self: center;
+    justify-items: center;
+    text-align: center;
 }
 
-.plus{
-    width: 2vh;
+.add a{
+    border: #272C32 solid .5vh;
+    border-radius: 3vh;
+    align-content: center;
+    width: 30%;
+    height: 20%;
+    align-self: center;
+    padding: 0;
+    margin: 0;
+}
+
+
+.add > a > img{
+    width: 60%;
+    align-self: center;
+    padding: 0;
+    margin: 0;
+    justify-self: center;
+    text-align: center;
 }
 
 h3{
@@ -198,45 +182,6 @@ h3{
     position: sticky;
 }
 /*FIM CARDS*/
-
-#card{
-    padding: 0 18px;
-    display: none;
-    overflow: hidden;
-    background-color: #ffffff;
-    border-radius: 1vh;
-  
-}
-
-.active, #info:hover {
-    background-color: #ffffff;
-  }
-
-
-
-
-
-.star{
-        border-color: #272C32;
-        border-width: 1vh;
-        background-color: transparent;
-        cursor: pointer;
-        width: 6vh;
-        text-align: right;
-        float: right;
-        margin-left: 55%;
-        background-image: url(img/star-t.png);
-        background-repeat: no-repeat;
-        background-size: 3vh;
-	    transition: all .2s ease;
-
-	
-	&.active {
-		background-image: url(img/star-y.png);
-        background-repeat: no-repeat;
-	}
-
-}
 
 footer{
     font-family: "Rajdhani", sans-serif;

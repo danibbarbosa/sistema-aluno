@@ -26,22 +26,24 @@
       <h3>LOGIN, ALUNO</h3>
       <div id="area">
         <h4>CPF:</h4>
-        <input type="number" placeholder="xxx.xxx.xxx-xx">
+        <input id="user" type="number"placeholder="xxx.xxx.xxx-xx">
         <h4>SENHA:</h4>
         <div id="senha">
-          <input placeholder="******">
+          <input id="password" placeholder="******">
           <span class="olho"><button class="eye"><img src="img/closed.png"></button></span>
         </div>
         <a class="rec" href="">Recuperar Senha</a>
-        <button type="submit">LOGIN</button>
+        <button onclick="login()" type="submit" target="">LOGIN</button>
       </div>
     </div>
 
     <div id="particles-js"></div>
+
+    <footer>SENAI&copy2024</footer>
     <script src="particles.js"></script>
     <script src="app.js"></script>
 
-    <!-- stats.js -->
+<!--Animação de Fundo-->
     
 <script>
   var count_particles, stats, update;
@@ -62,6 +64,8 @@
   };
   requestAnimationFrame(update);
 </script>
+
+<script src="login.js"></script>
 
 </body>
 </html>

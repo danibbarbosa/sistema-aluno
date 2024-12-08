@@ -27,18 +27,20 @@
       <h3>LOGIN, EMPRESA</h3>
       <div id="area">
         <h4>CÓDIGO DE ACESSO:</h4>
-        <input type="number" placeholder="xxxxxxxxx">
+        <input id="user" type="number" placeholder="xxxxxxxxx">
         <h4>SENHA:</h4>
         <div id="senha">
-          <input placeholder="******">
+          <input id="password" placeholder="******">
           <span class="olho"><button class="eye"><img src="img/closed.png"></button></span>
         </div>
         <a class="rec" href="">Recuperar Senha</a>
-        <button type="submit">LOGIN</button>
+        <button onclick="login()" type="submit">LOGIN</button>
       </div>
     </div>
 
     <div id="particles-js"></div>
+
+    <footer>SENAI&copy2024</footer>
     <script src="particles.js"></script>
     <script src="app-2.js"></script>
 
@@ -61,6 +63,23 @@
     requestAnimationFrame(update);
   };
   requestAnimationFrame(update);
+</script>
+
+<script>
+  function login(){
+
+
+const user = document.getElementById("user").value;
+const password = document.getElementById("password").value;
+
+if (user == "12345" && password == "12345"){
+    window.open("portal-emp.html", "_self");
+}
+else{
+    window.alert("Senha Errada");
+}
+
+}
 </script>
 
 </body>

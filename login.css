@@ -163,6 +163,11 @@ button{
     display: grid;
     grid-template-rows: auto;
 }
+
+.log{
+    justify-self: center;
+}
+
 h4{
     margin: 0;
     padding: 0;
@@ -192,3 +197,13 @@ input[type=number]{
     background-repeat: no-repeat;
   }
   
+
+  footer{
+    font-family: "Rajdhani", sans-serif;
+    color: white;
+    font-weight: 500;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+}
