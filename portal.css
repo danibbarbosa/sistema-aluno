@@ -1,6 +1,5 @@
 body{
     background-color: #272C32;
-    overflow: hidden;
     margin: 0;
     padding: 0;
 }
@@ -80,6 +79,20 @@ h2{
 }
 
 #cards a {
+    text-align: center;
+    text-decoration: none;
+}
+
+#cards-2{
+    display: flex;
+    align-items: center;
+    height: 50%;
+    justify-items: center;
+    margin-left: 2vh;
+    margin-bottom: 5vh;
+}
+
+#cards-2 a {
     text-align: center;
     text-decoration: none;
 }
